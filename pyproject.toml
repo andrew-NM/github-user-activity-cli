@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-activity"
+version = "0.1.0"
+description = "CLI tool to view GitHub user activity"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["requests"]
+
+[project.scripts]
+github-activity = "github_activity.cli:main"
